@@ -90,8 +90,8 @@ def create_app(config_class=Config):
 
     return app
 
-
-@babel.localeselector
+# Commented out because it was throwing an error
+# @babel.localeselector
 def get_locale():
     return request.accept_languages.best_match(current_app.config['LANGUAGES'])
 

@@ -10,6 +10,15 @@
                 <span id="post1">This is my one and only blog post. Can you add more using a for loop?</span>
             </td>
         </tr>
+        {%for i in range(0, len)%}
+
+        <tr>
+            <td>
+                <br>
+                <span>{{posts[i].body}}</span>
+            </td>
+        </tr>
+        {%endfor%}
     </table>
     <nav aria-label="...">
         <ul class="pager">
